@@ -9,4 +9,4 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = motor.motor_asyncio.AsyncIOMotorClient(os.environ["MONGODB_URL"])
-db = client[os.environ["DB_ENVIRONMENT"]]
+db = client[os.environ["ENVIRONMENT"]]
